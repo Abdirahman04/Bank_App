@@ -1,6 +1,7 @@
 package com.bank.dbactions;
 
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -53,5 +54,20 @@ public class DatabaseActions {
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static JSONObject getSingleCustomer(String acc) {
+        JSONArray jArr = fetchCustomers();
+        JSONObject customer = new JSONObject();
+
+        for(Object obj : jArr) {
+            JSONObject jObj = (JSONObject) obj;
+            if(jObj.get("accountNumber").equals(acc)) {
+                customer = jObj;
+                break;
+            }
+        }
+
+        return customer;
     }
 }
