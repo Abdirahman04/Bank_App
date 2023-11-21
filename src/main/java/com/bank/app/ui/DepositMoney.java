@@ -13,7 +13,10 @@ public class DepositMoney {
         Scanner sc = new Scanner(System.in);
         double amount = sc.nextDouble();
 
-        if(amount <= 20) System.out.println("!!!  The amount deposited should not be less than 20  !!!");
+        if(amount <= 20) {
+            System.out.println("!!!  The amount deposited should not be less than 20  !!!");
+            depositCash(accNumber);
+        }
 
         Deposit.depositMoneyHandler(amount,accNumber);
         System.out.println("Money deposited successfully!");

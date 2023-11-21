@@ -1,16 +1,16 @@
 [
   {
-    "amount": "-98832.0",
+    "amount": "11000.0",
+    "pin": "9999",
+    "name": "Lipman",
+    "accountNumber": "12345678",
+    "email": "lipman54@gmail.com"
+  },
+  {
+    "amount": "896832.0",
     "pin": "1111",
     "name": "Abdirahman",
     "accountNumber": "115800303",
     "email": "abdi75@gmail.com"
-  },
-  {
-    "amount": "2.4444832E7",
-    "pin": "2398",
-    "name": "Hassan",
-    "accountNumber": "23994832",
-    "email": "hass76@gmail.com"
   }
 ]
